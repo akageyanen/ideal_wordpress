@@ -1,0 +1,461 @@
+/*
+Theme Name: ideal Theme
+Theme URI: http://ideal.okinawa
+Description: ideal okinawa theme
+Version: 1.1
+Author: akagemaru
+Author URI: http://ideal.okinawa
+*/
+@charset 'UTF-8';
+
+.row {
+	margin-top: 3em;
+}
+
+@media (min-width: 768px) {
+	#banner {
+		min-height: 300px;
+		border-bottom: none;
+	}
+
+	.bs-docs-section {
+		margin-top: 8em;
+	}
+
+	.bs-component {
+		position: relative;
+	}
+
+	.bs-component .modal {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+		bottom: auto;
+		z-index: 1;
+		display: block;
+	}
+
+	.bs-component .modal-dialog {
+		width: 90%;
+	}
+
+	.bs-component .popover {
+		position: relative;
+		display: inline-block;
+		width: 220px;
+		margin: 20px;
+	}
+
+	.nav-tabs {
+		margin-bottom: 15px;
+	}
+
+	.progress {
+		margin-bottom: 10px;
+	}
+}
+
+/* ナビゲーション */
+.navbar {
+	min-height: 50px;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+	height: 50px;
+	padding: 15px 15px;
+}
+
+@media (min-width: 1024px) {
+	nav.navbar .navbar-brand img.logo {
+		width: 150px;
+	}
+}
+
+@media (max-width: 992px) {
+	nav.navbar .navbar-brand img.logo {
+		width: 120px;
+	}
+}
+
+.navbar-default .navbar-nav> .active> a,
+.navbar-default .navbar-nav> .active> a:hover,
+.navbar-default .navbar-nav> .active> a:focus {
+	color: #fff;
+	background-color: #33373a;
+}
+
+.navbar-default .navbar-nav> li> a {
+	color: #fff;
+	margin-top: 0;
+}
+
+.navbar-default .navbar-nav> .open> a,
+.navbar-default .navbar-nav> .open> a:hover,
+.navbar-default .navbar-nav> .open> a:focus {
+	color: #fff;
+	background-color: #733a11;
+}
+
+/* パンくずリスト */
+.breadcrumbs {
+	margin-bottom: 1em;
+	padding: .2em;
+}
+
+.breadcrumbs a {
+	color: #f43438;
+}
+
+/* トップページ記事一覧 */
+.id-box {
+	padding: 15px;
+}
+
+.id-thumb {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.id-thumb .mask {
+	position: absolute;
+	height: 300px;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/* マスクを表示しない */
+	background-color: rgba(49, 26, 4, .4);
+	/* マスクは半透明 */
+	-webkit-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+
+.id-thumb .mask .caption {
+	font-size: 130%;
+	text-align: center;
+	color: #fff;
+}
+
+.id-thumb .mask .caption img {
+	width: 15%;
+	margin-bottom: .5em;
+}
+
+.id-thumb .mask:hover {
+	opacity: 1;
+	padding-top: 5em;
+	/* ホバーで下にずらす */
+}
+
+.id-thumb__caption {
+	border-bottom: solid 1px #ccc;
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+}
+
+.id-box__detail {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	list-style: none;
+	padding-left: 0;
+	font-size: .8em;
+}
+
+.id-box__detail li {
+	padding: 0 .4em;
+	font-size: 1.2em;
+}
+
+.id-box__detail--category {
+	background: #33373a;
+	margin-right: .2em;
+}
+
+.id-box__detail--category a {
+	color: #fff;
+}
+
+/* サイドバー */
+.id-box__sidebar__title {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: .3em;
+}
+
+.id-box__sidebar__category ul {
+	list-style: none;
+	padding: 0;
+}
+
+.id-box__sidebar__category ul li {
+	background: #33373a;
+	padding: .3em 1em;
+	margin-bottom: .5em;
+}
+
+.id-box__sidebar__category ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.id-box__sidebar__category ul li:hover {
+	background: #733a11;
+	-webkit-transition: all .2s;
+	        transition: all .2s;
+}
+
+.id-box__sidebar__category ul .count {
+	float: right;
+	background: #fff;
+	color: #33373a;
+	padding: 0 .5em;
+}
+
+/* ページャー */
+.id-pager {
+	text-align: center;
+}
+
+.pagination> li> a,
+.pagination> li> span {
+	color: #fff;
+	background-color: #33373a;
+}
+
+li.active {
+	z-index: 3;
+	color: #fff;
+	cursor: default;
+	background-color: #2196f3;
+	border-color: #2196f3;
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+/* フッター */
+footer {
+	height: 80px;
+	color: #fff;
+	background: #33373a;
+}
+
+.id-copyright {
+	position: relative;
+	text-align: center;
+	vertical-align: -webkit-baseline-middle;
+	top: 35%;
+}
+
+/*コンテンツ*/
+.id-content p {
+	line-height: 1.35417;
+	text-align: justify;
+	letter-spacing: normal;
+}
+
+.id-content a {
+	color: #f43438;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.id-content__meta.\--isDate {
+	margin-right: 1em;
+}
+
+.id-content__meta.\--isCat {
+	background: #33373a;
+	color: #fff;
+	padding: .2em;
+}
+
+.id-content__meta.\--isCat a {
+	color: #fff;
+}
+
+.id-content__headline {
+	font-size: 1.5em;
+	border-bottom: 3px solid #33373a;
+	padding-bottom: .2em;
+}
+
+.id-content h2 {
+	font-size: 1.25em;
+	border-left: 3px solid #ea1c0d;
+	padding: .3em .4em;
+}
+
+/* Youtube埋め込み */
+.youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/*---------------------------------
+  SNS Button start
+---------------------------------*/
+.sns_area {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.sns_area ul {
+	text-align: center;
+	list-style: none;
+}
+
+.sns_area li {
+	float: left;
+	width: 18%;
+	margin: 0 1% 30px 1%;
+}
+
+.sns_area li a {
+	font-size: 75%;
+	position: relative;
+	display: block;
+	padding: 12px 2px;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.sns_area li a:hover {
+	-webkit-transform: translate3d(0px, 5px, 1px);
+	        transform: translate3d(0px, 5px, 1px);
+	box-shadow: none;
+	-webkit-transition-duration: .4s;
+	        transition-duration: .4s;
+	-webkit-transition-property: all;
+	        transition-property: all;
+	-webkit-transition-timing-function: ease;
+	        transition-timing-function: ease;
+}
+
+/* ボタン内のシェア数スタイル */
+.sns_area li a .sns_count {
+	position: absolute;
+	font-size: 85%;
+	right: 5px;
+	bottom: 3px;
+}
+
+/* feedlyボタンスタイル */
+.sns_area .feedly-o a {
+	background: #87bf31;
+	box-shadow: 0 5px 0 #689425;
+}
+
+.sns_area .feedly-o a:hover {
+	background: #333;
+}
+
+/* Twitterボタンスタイル */
+.sns_area .twitter-o a {
+	background: #6faedc;
+	box-shadow: 0 5px 0 #4a7492;
+}
+
+.sns_area .twitter-o a:hover {
+	background: #333;
+}
+
+/* Facebookボタンスタイル */
+.sns_area .facebook-o a {
+	background: #3b5998;
+	box-shadow: 0 5px 0 #213152;
+}
+
+.sns_area .facebook-o a:hover {
+	background: #333;
+}
+
+/* はてブボタンスタイル */
+.sns_area .hatena-o a {
+	background: #3a3a3a;
+	box-shadow: 0 5px 0 #000;
+}
+
+.sns_area .hatena-o a:hover {
+	background: #333;
+}
+
+/* Pocketボタンスタイル */
+.sns_area .pocket-o a {
+	background: #ed4054;
+	box-shadow: 0 5px 0 #982936;
+}
+
+.sns_area .pocket-o a:hover {
+	background: #333;
+}
+
+.sns_area p {
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.sns_area ul {
+	padding-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.sns_area li {
+		float: none;
+		width: 28%;
+		margin: 0 1% 15px 1%;
+		display: inline-block;
+	}
+
+	.sns_area li a {
+		padding: 5px 2px;
+	}
+
+	.sns_area li a .sns_count {
+		bottom: 0;
+	}
+	/* feedlyボタンスタイル */
+	.sns_area .feedly-o a {
+		box-shadow: 0 3px 0 #689425;
+	}
+	/* Twitterボタンスタイル */
+	.sns_area .twitter-o a {
+		box-shadow: 0 3px 0 #4a7492;
+	}
+	/* Facebookボタンスタイル */
+	.sns_area .facebook-o a {
+		box-shadow: 0 3px 0 #213152;
+	}
+	/* はてブボタンスタイル */
+	.sns_area .hatena-o a {
+		box-shadow: 0 3px 0 #000;
+	}
+	/* Pocketボタンスタイル */
+	.sns_area .pocket-o a {
+		box-shadow: 0 3px 0 #982936;
+	}
+}
+
+/*---------------------------------
+  SNS Button end
+---------------------------------*/
+
